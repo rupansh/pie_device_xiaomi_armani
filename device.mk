@@ -56,12 +56,6 @@ PRODUCT_PACKAGES += \
     tinymix \
     libaudioroute
 
-PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.soundtrigger@2.0-impl
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -116,14 +110,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-lite
-
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm@1.0-service.widevine
-
 # Ebtables
 PRODUCT_PACKAGES += \
     ebtables \
@@ -142,10 +128,9 @@ PRODUCT_PACKAGES += \
 
 # GNSS HAL
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl-qti:64 \
-    android.hardware.gnss@1.0-service-qti \
     android.hardware.gnss@1.0-impl \
-    android.hardware.gnss@1.0-impl-qti
+    android.hardware.gnss@1.0-impl-qti \
+    android.hardware.gnss@1.0-service-qti
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -195,10 +180,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.msm8226
 
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -247,9 +228,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
