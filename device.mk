@@ -249,7 +249,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
 
 PRODUCT_PACKAGES += \
-    sensors.msm8226
+    sensors.msm8226 \
     android.hardware.contexthub@1.0-impl.nanohub
 
 # Storage
