@@ -249,7 +249,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     sensors.msm8226 \
-    android.hardware.contexthub@1.0-impl.nanohub
 
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \
