@@ -121,11 +121,6 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
-# Gatekeeper HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
-
 # GNSS HAL
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
