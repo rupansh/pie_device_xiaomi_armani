@@ -133,6 +133,10 @@ TARGET_USES_NON_TREBLE_CAMERA := true
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Mediaserver
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+        /system/bin/mediaserver=23
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
