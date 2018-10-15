@@ -115,6 +115,9 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# GO
+$(call inherit-product, build/target/product/go_defaults.mk)
+
 # GNSS HAL
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
