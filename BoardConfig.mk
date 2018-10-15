@@ -157,7 +157,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_NO_SECURE_DISCARD := true
 
 # Radio
-TARGET_RIL_VARIANT := caf
+#AOSP HAL lul
 
 # SELinux
 #permissive lul
